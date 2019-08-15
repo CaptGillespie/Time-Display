@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    DateTime CurrentTime = DateTime.Now;
+}
+
+<div class="text-center">
+    <h1 class="display-4">The current time and date:</h1>
+    <div class="date">
+        <p>Date: @CurrentTime.ToString("MMM d, yyy") </p>
+        <p>Time: @CurrentTime.ToString("h:mm tt") </p>
+    </div>
+</div>
+
+<style>
+.date{
+height: 200px;
+width: 400px;
+outline: 2px solid black;
+margin-left: 300px;
+}
+</style>
